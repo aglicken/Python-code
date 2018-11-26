@@ -1,3 +1,4 @@
+Source code from Michal Young
 #Calculator
 
 Usage:  ```python3 calc.py```
