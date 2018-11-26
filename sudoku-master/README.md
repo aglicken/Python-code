@@ -1,3 +1,4 @@
+Source code from Michal Young
 # Sudoku
 
 A solver for the classic puzzle, as a programming 
