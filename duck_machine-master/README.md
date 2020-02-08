@@ -1,3 +1,4 @@
+Source code from Michal Young
 # The Duck Machine
 
 A very basic, ultra-RISCy computer simulation project.
