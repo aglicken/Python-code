@@ -3,12 +3,12 @@ $(document).ready(function(){
 
     /* MEMBER PROFILE FUNCTIONS */
 
-    // Member Cover Letter
     $("#get_member_cover_letter").submit(function(event){
         
         // Use AJAX to populate cover letter data. 
         event.preventDefault();
         var view_member = this.name;
+        console.log(view_member);
         var $form = $(this),
         url = $form.attr('action');
 
@@ -20,12 +20,12 @@ $(document).ready(function(){
         });
     });
 
-    // Member Resume
     $("#get_member_resume").submit(function(event){
         
-        // Use AJAX to populate resume data. 
+        // Use AJAX to populate cover letter data. 
         event.preventDefault();
         var view_member = this.name;
+        console.log(view_member);
         var $form = $(this),
         url = $form.attr('action');
 
@@ -37,26 +37,8 @@ $(document).ready(function(){
         });
     });
 
-    // Member Carousel
-    $("#get_member_my_life").submit(function(event){
-        
-        // Use AJAX to populate carousel data. 
-        event.preventDefault();
-        var view_member = this.name;
-        var $form = $(this),
-        url = $form.attr('action');
-        var posting = $.post(url);
-
-        /* Put the results in a div */
-        posting.done(function(data) {
-            $("#member_card_content").load("/member_my_life/"+view_member)
-        });
-    });
-
-
 
     /* COVER LETTER FUNCTIONS */
-
     $("#get_cover_letter").submit(function(event){
         
         // Use AJAX to populate cover letter data. 
